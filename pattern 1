@@ -1,0 +1,14 @@
+block = int(input("enter the bock"))
+line = int(input("enter the lines"))
+s = int(input("enter the star"))
+star = 0 
+for b in range(block):
+  star = 0 
+  for j in range(line-b):
+      for k in range(s):
+          print("*",end = " ")
+          star = star+1
+      print()
+  print(star)       
+  print("-----------------------------------------")  
+       
