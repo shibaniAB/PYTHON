@@ -1,0 +1,17 @@
+names = ["A","B","C","D","E","F","G","H","I","J"]
+memo = [0,1,1,1,2,2,1,2,1,2]
+salary = [1000,2000,3000,4500,2000,5000,1500,2300,1300,1100]
+new = list(zip(names,memo,salary))
+removed = [i for i in new if i[2]>4000]
+bal = [i for i in new if i[2]<4000]
+bal.sort(key=lambda x:x[2],reverse= True)
+removed1 = []
+for i in bal:
+    if i[1]>=2:
+        removed1.append(i)
+    if (len(removed1)==3):
+        break
+res = removed+removed1
+
+print("the final list of people removed is :")
+print(res)
