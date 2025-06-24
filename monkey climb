@@ -1,0 +1,12 @@
+x = 30
+y = 10
+z = 5
+climb = 0 
+minn = 0
+while(climb!=x) :
+    minn = minn+1
+    if(minn%2==0):
+        climb= climb-z
+    else:
+        climb = climb+y
+print(minn)        
