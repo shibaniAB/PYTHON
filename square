@@ -1,0 +1,2 @@
+  return(num**0.5)%1 == 0   
+perfect square
