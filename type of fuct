@@ -1,0 +1,32 @@
+def circle():
+    r = 3
+    print(3.14*r*r)
+def rectangle(l,b):
+    return(l*b)
+def triangle():
+    h =3
+    b = 4
+    print(0.5*h*b)
+def square():
+     a = 4
+     return(4*a)
+    
+while(True):
+  print("1.circle 2. rectangle 3.triangle 4.square")
+  num =int(input("please enter the choice:"))
+  match num :
+    case 1:
+        circle()
+    case 2:
+        l = int(input("enter the length"))
+        b = int(input("enter the beadth"))
+        rec = rectangle(l,b)
+        print(rec)
+    case 3:
+        triangle()
+    case 4:
+        squ = square()
+        print(squ)
+    case _ :
+        break
+ 
