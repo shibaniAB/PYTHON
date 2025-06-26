@@ -1,0 +1,22 @@
+year = int(input("enter the year"))
+b = year%400
+c = b//100
+d= b%100
+e= d//4
+f = d-e
+g= ((c*5)+(e*2)+f)%7
+print(g)
+if g== 0:
+    print("sunday")
+elif g== 1:
+    print("monday")
+elif g== 2:
+    print("tuesday")    
+elif g== 3:
+    print("wednesday") 
+elif g== 4:
+    print("thursday")  
+elif g== 5:
+    print("friday")   
+else:
+    print("saturdat") 
