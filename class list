@@ -1,0 +1,19 @@
+class rect:
+    def set_dim(self,a,b):
+        self.a = a
+        self.b = b
+        
+    def area(self):
+        return self.a*self.b
+l = []
+ch = int(input("please enter the choice :"))
+for i in range(ch):
+    r = rect()
+    length = int(input("enetr the length"))
+    breadth = int(input("enter the breadth"))
+    r.set_dim(length,breadth)
+    l.append(r)
+
+for i in l:
+    b = i.area()
+    print(b)
