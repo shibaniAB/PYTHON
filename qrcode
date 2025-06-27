@@ -1,0 +1,8 @@
+import qrcode
+msg = "this is day 7 -----> shibu"
+r = qrcode.QRCode()
+r.add_data(msg)
+r.make(fit=True)
+a= r.make_image(fill_colour="black",back_color="white")
+a.save("shibu.png")
+print("tag is saved corretly")
