@@ -1,0 +1,7 @@
+def add_num(*args):
+    total = 0
+    for num in args:
+        total += num
+    print("sum",total)
+add_num(10,201)   
+add_num(20,10,10)
