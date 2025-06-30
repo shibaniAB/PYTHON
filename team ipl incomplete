@@ -1,0 +1,16 @@
+import random
+n=  int(input("enter the number of team"))
+teams=[]
+meet = (int(input("enter the innings ")))
+print("enter the name of teams")
+for i in range (n):
+    teams.append(input())
+matches=[]    
+for i in range (n-1):
+    for j in range(i+1,n):
+        for k in range(meet):
+            matches.append([i,j])
+random.shuffle(matches)
+no= 0
+for i in (matches):
+    print(matches)
